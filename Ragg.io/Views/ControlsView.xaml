@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Ragg.io.Views.ControlsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d">
+    <DockPanel Height="32">
+        <StackPanel Margin="5" Orientation="Horizontal">
+            <ToggleButton IsChecked="{Binding x1Toggled, Mode=OneWay}" Click="ToggleButton_Click_2" >x1</ToggleButton>
+            <ToggleButton IsChecked="{Binding x2Toggled, Mode=OneWay}" Click="ToggleButton_Click">x2</ToggleButton>
+            <ToggleButton IsChecked="{Binding x3Toggled, Mode=OneWay}" Click="ToggleButton_Click_1">x3</ToggleButton>
+        </StackPanel>
+        <Button Width="50" FontWeight="Bold" IsEnabled="{Binding IsStateValid}" Click="Button_Click">Vinto</Button>
+        <Button Width="50" FontWeight="Bold" IsEnabled="{Binding IsStateValid}" Click="Button_Click_1">Perso</Button>
+    </DockPanel>
+</UserControl>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="Ragg.io.Views.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ragg.io - Segnapunti per il briscolone" WindowState="Maximized">
+    <DockPanel Margin="20">
+        <DockPanel DockPanel.Dock="Top">
+            <ContentControl Content="{Binding Header.View}"></ContentControl>
+        </DockPanel>
+        <DockPanel>
+            <ScrollViewer Name="scrollViewer" VerticalScrollBarVisibility="Auto">
+                <ContentControl Content="{Binding Games.View}"></ContentControl>
+            </ScrollViewer>
+        </DockPanel>
+    </DockPanel>
+</Window>
