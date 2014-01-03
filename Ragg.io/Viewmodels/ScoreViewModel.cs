@@ -39,5 +39,16 @@ namespace Ragg.io.Viewmodels
         {
             get { return _isAlternate ? "#eee" : "#fff"; }
         }
+
+        public string ForegroundColor
+        {
+            get
+            {
+                if (_score == 0) return "Black";
+                return _score > 0 ? "Blue" : "Red";
+            }
+
+
+        }
     }
 }
